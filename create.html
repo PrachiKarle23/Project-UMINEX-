@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <center>
+        <div class="logo">
+            <img src="./Media/logo.png" height="100%" width="100%" alt="">
+        </div>
+        <form id="regform" class="rounded">
+            <h3>Sign Up</h3>
+            <br>
+            <div class="mb-3">
+                <label for="username" class="form-label">Name</label>
+                <input class="form-control" type="text" id="username" placeholder="Enter your name" required />
+            </div>
+            <div class="mb-3">
+                <label for="useremail" class="form-label">Email</label>
+                <input class="form-control" type="email" id="useremail" placeholder="Enter your email" required />
+            </div>
+            <div class="mb-3">
+                <label for="phn" class="form-label">Contact Number</label>
+                <input class="form-control" type="tel" id="phn" placeholder="Enter your Contact number" required />
+            </div>
+            <div class="mb-3">
+                <label for="pass" class="form-label">Password</label>
+                <input class="form-control" type="password" id="pass" placeholder="Enter your password" required />
+            </div>
+            <div class="mb-3">
+                <label for="cpass" class="form-label">Confirm Password</label>
+                <input class="form-control" type="password" id="cpass" placeholder="Reenter the Password" required />
+            </div>
+            <button onclick="verify()" class="btn btn-outline-primary" id="bt">Submit</button>
+        </form>
+    </center>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
